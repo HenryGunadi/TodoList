@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .grid {
+        grid-template-columns: 5fr 1fr;
+      }
+    </style>
+  </head>
+  <body class="font-open-sans m-0 tracking-widest">
+    <div class="w-screen h-screen flex justify-center items-center bg-gradient-to-r from-blue-500 to-blue-600">
+      <div class="container rounded-sm bg-white flex items-center flex-col py-4 px-5 max-w-md" id="container">
+        <h1 class="font-bold text-4xl mb-6 text-slate-700">TODO LIST</h1>
+
+        <form id="form" class="mb-2 flex w-11/12">
+          <div class="grid grid-cols-2 grid-flow-col gap-4 w-full">
+            <input type="text" class="border-b border-slate-500 outline-none px-2 w-full text-base tracking-wide me-5" placeholder="Add Task" id="input" />
+            <button type="submit" class="tracking-wide bg-blue-500 shadow-md shadow-blue-500/50 text-slate-100 py-1.5 px-2.5 rounded-md hover:opacity-80 transition duration-200 me-3" id="submit-button">Add</button>
+          </div>
+        </form>
+
+        <div class="warning"></div>
+      </div>
+    </div>
+
+    <!-- script js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
